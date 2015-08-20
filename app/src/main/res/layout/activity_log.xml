@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" android:layout_height="fill_parent"
+    android:weightSum="1"
+    android:background="#51b46d"
+
+    >
+
+    <LinearLayout
+        android:layout_width="400dp"
+        android:layout_height="100dp"
+        android:id="@+id/linearLayout">
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="77dp"
+        android:id="@+id/imageButton4"
+        android:onClick="NewTitle1"
+
+        android:src="@drawable/titletag"
+
+        android:layout_weight="0.20"
+
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/TitleTextView"
+        android:layout_alignEnd="@+id/TitleTextView"
+        android:background="@android:drawable/btn_default"
+/>
+
+
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="77dp"
+        android:id="@+id/imageButton4"
+        android:onClick="NewAnimal"
+
+        android:src="@drawable/notes"
+
+        android:layout_weight="0.20"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/imageButton3"
+        android:layout_toStartOf="@+id/imageButton3"
+        android:background="@android:drawable/btn_default" />
+
+
+        <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="77dp"
+        android:id="@+id/imageButton5"
+
+        android:onClick="clickLocation"
+        android:src="@drawable/location"
+
+        android:layout_weight="0.20"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/imageButton3"
+        android:layout_toEndOf="@+id/imageButton3"
+            android:background="@android:drawable/btn_default" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="77dp"
+        android:id="@+id/imageButton3"
+
+
+        android:onClick="clickCamera"
+        android:src="@drawable/pic"
+
+        android:layout_weight="0.20"
+        android:layout_above="@+id/TitleTextView"
+        android:layout_centerHorizontal="true"
+        android:background="@android:drawable/btn_default" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="77dp"
+        android:id="@+id/LogPicture"
+
+        android:onClick="clickTakeMeToMyCar"
+        android:src="@drawable/map"
+
+        android:layout_weight="0.20"
+        android:layout_above="@+id/TitleTextView"
+        android:layout_toRightOf="@+id/imageButton5"
+        android:layout_toEndOf="@+id/imageButton5"
+        android:background="@android:drawable/btn_default" />
+    </LinearLayout>
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:id="@+id/PictureImageView"
+        android:onClick="clickProfilePic"
+        android:src= "@drawable/gallery"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentEnd="false"
+        android:focusableInTouchMode="true" />
+<LinearLayout
+
+    android:layout_width="400dp"
+    android:layout_height="50dp"
+
+    android:layout_marginTop="100dp"
+    >
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="  Summary"
+        android:id="@+id/textView2"
+        android:textColor="#fffffb00" />
+</LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="400dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="150dp">
+
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Location"
+        android:id="@+id/LocationTextView"
+            android:layout_below="@+id/NotesTextView"
+            android:layout_toRightOf="@+id/imageView"
+            android:layout_toEndOf="@+id/imageView"
+            android:layout_marginTop="25dp" />
+ " />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Title"
+            android:id="@+id/TitleTextView"
+            android:layout_alignParentTop="true"
+            android:layout_alignLeft="@+id/LocationTextView"
+            android:layout_alignStart="@+id/LocationTextView" />
+
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Notes"
+        android:id="@+id/NotesTextView"
+
+        android:layout_weight="0.20"
+            android:layout_marginTop="27dp"
+            android:layout_below="@+id/TitleTextView"
+            android:layout_alignLeft="@+id/TitleTextView"
+            android:layout_alignStart="@+id/TitleTextView" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView"
+            android:src= "@drawable/titletag"
+            android:layout_above="@+id/NotesTextView"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:id="@+id/imageView2"
+            android:src="@drawable/notes"
+
+            android:layout_toLeftOf="@+id/NotesTextView"
+            android:layout_alignTop="@+id/NotesTextView"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView3"
+            android:src="@drawable/geo"
+            android:layout_alignBottom="@+id/LocationTextView"
+            android:layout_alignTop="@+id/LocationTextView"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="5dp" />
+
+    </RelativeLayout>
+</RelativeLayout>
