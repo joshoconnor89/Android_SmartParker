@@ -1,4 +1,4 @@
-# SmartParker
+# SmartParker (beta)
 Android App
 
 SmartParker (beta) is an Android app written by Joshua O'Connor in the Fall of 2014.  It was a class project for UCSD's Mobile App Development program.  The requirements for this class project were to incorporate hardware, geolocation, and storage in your Java based android application.  This was achieved by using the camera for hardware, SQLite for storage, and Google Maps.  This project is still in beta.
