@@ -9,3 +9,4 @@ SmartParker is an Android app which keeps a track of where you parked.  When you
 
 For any questions, please contact the developer, Joshua O'Connor, at http://www.joshoconnor.us/contact
 
+Copyright Joshua O'Connor 2015.  All rights reserved.
